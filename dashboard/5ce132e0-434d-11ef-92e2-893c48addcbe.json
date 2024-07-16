@@ -589,25 +589,25 @@
                 "76dc82c8-b3d0-e7c0-5135-b975a8b78141" : {
                   "sizeX" : 11,
                   "sizeY" : 7,
-                  "row" : 0,
-                  "col" : 13
+                  "row" : 6,
+                  "col" : 0
                 },
                 "95dc6290-065c-5549-7409-b374768561db" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
-                  "row" : 7,
-                  "col" : 0
+                  "row" : 0,
+                  "col" : 17
                 },
                 "0631e3fb-ecf0-1da5-cef9-99b671d5ea1c" : {
                   "sizeX" : 10,
                   "sizeY" : 6,
-                  "row" : 7,
-                  "col" : 10
+                  "row" : 0,
+                  "col" : 7
                 },
                 "a435a199-1cfe-e4a4-953a-ff4429cf54d9" : {
                   "sizeX" : 7,
                   "sizeY" : 6,
-                  "row" : 1,
+                  "row" : 0,
                   "col" : 0
                 }
               },
