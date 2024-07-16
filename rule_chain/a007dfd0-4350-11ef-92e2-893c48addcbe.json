@@ -126,7 +126,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return msg.lon != 0 && msg.lat != 0;"
+        "tbelScript" : "return msg.lon != 0 && msg.lat != 0 && msg.lon != null && msg.lat != null;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
