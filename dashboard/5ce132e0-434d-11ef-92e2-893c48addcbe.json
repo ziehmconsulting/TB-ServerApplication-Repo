@@ -505,14 +505,24 @@
           "sizeY" : 6.5,
           "config" : {
             "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
               "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 86400000
+                "realtimeType" : 0,
+                "timewindowMs" : 600000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
               },
               "aggregation" : {
                 "type" : "NONE",
                 "limit" : 200
-              }
+              },
+              "timezone" : null
             },
             "showTitle" : true,
             "backgroundColor" : "rgb(255, 255, 255)",
@@ -654,7 +664,7 @@
             "configMode" : "basic",
             "alarmFilterConfig" : {
               "statusList" : [ ],
-              "severityList" : [ "CRITICAL" ],
+              "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
               "typeList" : [ ],
               "searchPropagatedAlarms" : false,
               "assignedToCurrentUser" : false,
