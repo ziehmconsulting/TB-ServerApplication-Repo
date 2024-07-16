@@ -87,8 +87,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 963,
-        "layoutY" : 404
+        "layoutX" : 984,
+        "layoutY" : 402
       },
       "configuration" : {
         "scriptLang" : "TBEL",
