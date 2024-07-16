@@ -48,8 +48,8 @@
     "firstNodeIndex" : 6,
     "nodes" : [ {
       "additionalInfo" : {
-        "layoutX" : 822,
-        "layoutY" : 294
+        "layoutX" : 970,
+        "layoutY" : 292
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -70,8 +70,8 @@
     }, {
       "additionalInfo" : {
         "description" : null,
-        "layoutX" : 824,
-        "layoutY" : 221
+        "layoutX" : 974,
+        "layoutY" : 160
       },
       "configuration" : {
         "scope" : "CLIENT_SCOPE",
@@ -115,8 +115,8 @@
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 824,
-        "layoutY" : 383
+        "layoutX" : 966,
+        "layoutY" : 404
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -138,8 +138,8 @@
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 823,
-        "layoutY" : 444
+        "layoutX" : 858,
+        "layoutY" : 510
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -161,8 +161,8 @@
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 822,
-        "layoutY" : 507
+        "layoutX" : 737,
+        "layoutY" : 600
       },
       "configuration" : {
         "timeoutInSeconds" : 60
