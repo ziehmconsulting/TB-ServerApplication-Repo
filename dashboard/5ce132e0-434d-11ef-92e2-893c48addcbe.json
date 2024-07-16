@@ -498,175 +498,157 @@
           "col" : 0,
           "id" : "30779209-d462-c350-0f39-1f64f972ffd8"
         },
-        "be493d52-dae0-381d-3e43-a1fecc2b4f98" : {
-          "typeFullFqn" : "system.alarm_count",
-          "type" : "latest",
-          "sizeX" : 3.5,
-          "sizeY" : 1.5,
+        "0631e3fb-ecf0-1da5-cef9-99b671d5ea1c" : {
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm",
+          "sizeX" : 10.5,
+          "sizeY" : 6.5,
           "config" : {
-            "datasources" : [ {
-              "type" : "alarmCount",
-              "name" : "",
-              "dataKeys" : [ {
-                "name" : "count",
-                "type" : "count",
-                "label" : "count",
-                "settings" : { },
-                "_hash" : 0.13758179974044182
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ],
-                "severityList" : [ "CRITICAL" ],
-                "assignedToCurrentUser" : false,
-                "assigneeId" : null
-              }
-            } ],
             "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
               "realtime" : {
-                "realtimeType" : 1,
                 "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1721036340417,
-                  "endTimeMs" : 1721122740417
-                },
-                "quickInterval" : "CURRENT_DAY"
+                "timewindowMs" : 86400000
               },
               "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
+                "type" : "NONE",
+                "limit" : 200
               }
             },
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
+            "padding" : "4px",
             "settings" : {
-              "showLabel" : true,
-              "label" : "Total",
-              "labelFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "labelColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.54)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "showIcon" : true,
-              "iconSize" : 20,
-              "iconSizeUnit" : "px",
-              "icon" : "warning",
-              "iconColor" : {
-                "type" : "constant",
-                "color" : "rgba(255, 255, 255, 1)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "showIconBackground" : true,
-              "iconBackgroundSize" : 36,
-              "iconBackgroundSizeUnit" : "px",
-              "iconBackgroundColor" : {
-                "type" : "range",
-                "color" : "rgba(0, 105, 92, 1)",
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ {
-                    "from" : 0,
-                    "to" : 0,
-                    "color" : "rgba(0, 105, 92, 1)"
-                  }, {
-                    "from" : 1,
-                    "to" : null,
-                    "color" : "rgba(209, 39, 48, 1)"
-                  } ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "valueFont" : {
-                "family" : "Roboto",
-                "size" : 20,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "24px"
-              },
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "showChevron" : false,
-              "chevronSize" : 24,
-              "chevronSizeUnit" : "px",
-              "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column",
-              "autoScale" : true
+              "enableSelection" : true,
+              "enableSearch" : true,
+              "displayDetails" : true,
+              "allowAcknowledgment" : true,
+              "allowClear" : true,
+              "allowAssign" : true,
+              "displayActivity" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "-createdTime",
+              "enableSelectColumnDisplay" : true,
+              "enableStickyAction" : false,
+              "enableFilter" : true,
+              "entitiesTitle" : null,
+              "alarmsTitle" : "Alarms"
             },
-            "title" : "Alarm count",
+            "title" : "Alarms table",
             "dropShadow" : true,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : {
               "fontSize" : "16px",
-              "fontWeight" : 400
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
             },
-            "units" : "",
-            "decimals" : null,
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "showLegend" : false,
+            "alarmSource" : {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "d44ceab0-4350-11ef-92e2-893c48addcbe",
+              "entityAliasId" : null,
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "type" : "alarm",
+                "label" : "Created time",
+                "color" : "#2196f3",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.021092237451093787,
+                "funcBody" : null
+              }, {
+                "name" : "originator",
+                "type" : "alarm",
+                "label" : "Originator",
+                "color" : "#4caf50",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.2780007688856758,
+                "funcBody" : null
+              }, {
+                "name" : "type",
+                "type" : "alarm",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.7323586880398418,
+                "funcBody" : null
+              }, {
+                "name" : "severity",
+                "type" : "alarm",
+                "label" : "Severity",
+                "color" : "#ffc107",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false
+                },
+                "_hash" : 0.09927019860088193,
+                "funcBody" : null
+              }, {
+                "name" : "status",
+                "type" : "alarm",
+                "label" : "Status",
+                "color" : "#607d8b",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.6588418951443418,
+                "funcBody" : null
+              }, {
+                "name" : "assignee",
+                "type" : "alarm",
+                "label" : "Assignee",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.5008441077416634,
+                "funcBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            },
+            "alarmsPollingInterval" : 5,
+            "showTitleIcon" : false,
+            "titleIcon" : "warning",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
             "widgetStyle" : { },
+            "displayTimewindow" : true,
             "actions" : { },
             "configMode" : "basic",
-            "displayTimewindow" : true,
-            "margin" : "0px",
-            "borderRadius" : "0px",
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : null,
-              "style" : null,
-              "lineHeight" : "1"
+            "alarmFilterConfig" : {
+              "statusList" : [ ],
+              "severityList" : [ ],
+              "typeList" : [ ],
+              "searchPropagatedAlarms" : false
             },
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "14px",
-            "timewindowStyle" : {
-              "showIcon" : true,
-              "iconSize" : "14px",
-              "icon" : "query_builder",
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : null,
-                "weight" : null,
-                "style" : null,
-                "lineHeight" : "1"
-              },
-              "color" : null
-            },
-            "titleColor" : "rgba(0, 0, 0, 0.54)"
+            "datasources" : [ ],
+            "titleFont" : null,
+            "titleColor" : null
           },
           "row" : 0,
           "col" : 0,
-          "id" : "be493d52-dae0-381d-3e43-a1fecc2b4f98"
+          "id" : "0631e3fb-ecf0-1da5-cef9-99b671d5ea1c"
         }
       },
       "states" : {
@@ -700,11 +682,11 @@
                   "row" : 7,
                   "col" : 8
                 },
-                "be493d52-dae0-381d-3e43-a1fecc2b4f98" : {
-                  "sizeX" : 3,
-                  "sizeY" : 1,
-                  "row" : 7,
-                  "col" : 15
+                "0631e3fb-ecf0-1da5-cef9-99b671d5ea1c" : {
+                  "sizeX" : 10,
+                  "sizeY" : 6,
+                  "row" : 13,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
