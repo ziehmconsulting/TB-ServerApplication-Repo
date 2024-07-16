@@ -515,7 +515,10 @@
                 "_hash" : 0.13758179974044182
               } ],
               "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
+                "statusList" : [ "ACTIVE" ],
+                "severityList" : [ "CRITICAL" ],
+                "assignedToCurrentUser" : false,
+                "assigneeId" : null
               }
             } ],
             "timewindow" : {
@@ -608,7 +611,8 @@
               "chevronSize" : 24,
               "chevronSizeUnit" : "px",
               "chevronColor" : "rgba(0, 0, 0, 0.38)",
-              "layout" : "column"
+              "layout" : "column",
+              "autoScale" : true
             },
             "title" : "Alarm count",
             "dropShadow" : true,
