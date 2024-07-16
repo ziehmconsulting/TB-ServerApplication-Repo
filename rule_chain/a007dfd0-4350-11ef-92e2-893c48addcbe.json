@@ -26,16 +26,16 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "True"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 2,
+      "type" : "False"
+    }, {
+      "fromIndex" : 3,
       "toIndex" : 4,
       "type" : "True"
-    }, {
-      "fromIndex" : 4,
-      "toIndex" : 2,
-      "type" : "True"
-    }, {
-      "fromIndex" : 4,
-      "toIndex" : 3,
-      "type" : "False"
     } ],
     "firstNodeIndex" : 0,
     "nodes" : [ {
@@ -87,31 +87,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 967,
-        "layoutY" : 150
-      },
-      "configuration" : {
-        "scope" : "CLIENT_SCOPE",
-        "notifyDevice" : false,
-        "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : false
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "b75d5b30-4353-11ef-92e2-893c48addcbe"
-      },
-      "name" : "save location",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 963,
         "layoutY" : 404
       },
@@ -151,7 +126,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return msg.lon != 0 && msg.lat != 0;"
+        "tbelScript" : "return msg.lon != null && msg.lat != null;"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -166,6 +141,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 983,
+        "layoutY" : 221
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "81efbc90-4358-11ef-92e2-893c48addcbe"
+      },
+      "name" : "save to DB",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     } ],
     "ruleChainConnections" : null
   },
