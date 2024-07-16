@@ -58,8 +58,8 @@
     "firstNodeIndex" : 5,
     "nodes" : [ {
       "additionalInfo" : {
-        "layoutX" : 825,
-        "layoutY" : 52
+        "layoutX" : 886,
+        "layoutY" : 40
       },
       "configuration" : {
         "scope" : "CLIENT_SCOPE",
@@ -242,8 +242,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 889,
-        "layoutY" : 117
+        "layoutX" : 888,
+        "layoutY" : 104
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
