@@ -252,6 +252,13 @@
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.8103757016482294
+              }, {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.7331867431289414
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -492,6 +499,14 @@
                 "settings" : { },
                 "_hash" : 0.9468767727703642
               }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.2057850534266601,
+                "decimals" : 0
+              }, {
                 "name" : "lat",
                 "type" : "timeseries",
                 "label" : "lat",
@@ -508,12 +523,12 @@
                 "_hash" : 0.15324010454005021,
                 "decimals" : 0
               }, {
-                "name" : "active",
-                "type" : "attribute",
-                "label" : "active",
-                "color" : "#ffc107",
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.2057850534266601,
+                "_hash" : 0.16788598696021917,
                 "decimals" : 0
               } ],
               "alarmFilterConfig" : {
