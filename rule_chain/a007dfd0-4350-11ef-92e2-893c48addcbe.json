@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "b757dcf0-4353-11ef-92e2-893c48addcbe"
+      "id" : "e79818b0-4364-11ef-92e2-893c48addcbe"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -36,8 +36,12 @@
       "fromIndex" : 3,
       "toIndex" : 4,
       "type" : "True"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 0,
+      "type" : "Success"
     } ],
-    "firstNodeIndex" : 0,
+    "firstNodeIndex" : 5,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
@@ -165,6 +169,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 247,
+        "layoutY" : 77
+      },
+      "configuration" : {
+        "persistAlarmRulesState" : false,
+        "fetchAlarmRulesStateOnStart" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e79818b0-4364-11ef-92e2-893c48addcbe"
+      },
+      "name" : "device profile node",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
     } ],
     "ruleChainConnections" : null
   },
