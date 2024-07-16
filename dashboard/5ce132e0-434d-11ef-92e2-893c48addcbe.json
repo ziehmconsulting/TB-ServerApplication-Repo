@@ -134,13 +134,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "temperature",
-                "type" : "timeseries",
-                "label" : "temperature",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.7331867431289414
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
