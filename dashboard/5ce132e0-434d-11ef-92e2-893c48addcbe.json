@@ -621,6 +621,22 @@
                 "settings" : { },
                 "_hash" : 0.5008441077416634,
                 "funcBody" : null
+              }, {
+                "name" : "lat",
+                "type" : "timeseries",
+                "label" : "lat",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.8713484825543893,
+                "decimals" : 0
+              }, {
+                "name" : "long",
+                "type" : "timeseries",
+                "label" : "long",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.16163718800602034,
+                "decimals" : 0
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -638,9 +654,11 @@
             "configMode" : "basic",
             "alarmFilterConfig" : {
               "statusList" : [ ],
-              "severityList" : [ ],
+              "severityList" : [ "CRITICAL" ],
               "typeList" : [ ],
-              "searchPropagatedAlarms" : false
+              "searchPropagatedAlarms" : false,
+              "assignedToCurrentUser" : false,
+              "assigneeId" : null
             },
             "datasources" : [ ],
             "titleFont" : null,
