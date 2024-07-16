@@ -39,6 +39,10 @@
       "toIndex" : 6,
       "type" : "Post telemetry"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 8,
+      "type" : "Post telemetry"
+    }, {
       "fromIndex" : 5,
       "toIndex" : 1,
       "type" : "Success"
@@ -190,8 +194,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 855,
-        "layoutY" : 158
+        "layoutX" : 844,
+        "layoutY" : 190
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -235,6 +239,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 889,
+        "layoutY" : 117
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "a007dfd0-4350-11ef-92e2-893c48addcbe"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6aabd60-4362-11ef-92e2-893c48addcbe"
+      },
+      "name" : "gps-validation",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
