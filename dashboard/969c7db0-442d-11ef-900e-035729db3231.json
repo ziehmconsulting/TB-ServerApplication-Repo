@@ -17,12 +17,18 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "requestTimeout" : 500,
               "initialValue" : false,
+              "retrieveValueMethod" : "rpc",
+              "valueKey" : "value",
               "getValueMethod" : "getValue",
-              "setValueMethod" : "setValue",
-              "showOnOffLabels" : true,
-              "title" : "Switch control"
+              "parseValueFunction" : "return data ? true : false;",
+              "setValueMethod" : "setLedStatus",
+              "convertValueFunction" : "return value;",
+              "requestTimeout" : 500,
+              "requestPersistent" : false,
+              "persistentPollingInterval" : 5000,
+              "title" : "Switch control",
+              "showOnOffLabels" : true
             },
             "title" : "Switch Control",
             "dropShadow" : true,
