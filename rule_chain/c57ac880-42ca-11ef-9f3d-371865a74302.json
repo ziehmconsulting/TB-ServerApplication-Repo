@@ -24,10 +24,6 @@
       "type" : "Post attributes"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 2,
-      "type" : "RPC Request from Device"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 3,
       "type" : "Other"
     }, {
@@ -43,6 +39,10 @@
       "toIndex" : 8,
       "type" : "Post telemetry"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 9,
+      "type" : "RPC Request from Device"
+    }, {
       "fromIndex" : 5,
       "toIndex" : 1,
       "type" : "Success"
@@ -54,6 +54,14 @@
       "fromIndex" : 6,
       "toIndex" : 7,
       "type" : "True"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 5,
     "nodes" : [ {
@@ -103,8 +111,8 @@
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
     }, {
       "additionalInfo" : {
-        "layoutX" : 825,
-        "layoutY" : 266
+        "layoutX" : 587,
+        "layoutY" : 490
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -262,6 +270,54 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 322,
+        "layoutY" : 488
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return {msg: {time:String(new Date())}, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "470a25d0-4429-11ef-900e-035729db3231"
+      },
+      "name" : "script",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 409,
+        "layoutY" : 601
+      },
+      "configuration" : {
+        "serviceIdMetaDataAttribute" : "serviceId",
+        "sessionIdMetaDataAttribute" : "sessionId",
+        "requestIdMetaDataAttribute" : "requestId"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "470b5e50-4429-11ef-900e-035729db3231"
+      },
+      "name" : "rpc reply",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCReplyNode"
     } ],
     "ruleChainConnections" : null
   },
