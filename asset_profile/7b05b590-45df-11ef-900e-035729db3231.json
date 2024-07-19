@@ -12,7 +12,7 @@
       "entityType" : "ASSET_PROFILE",
       "id" : "7b05b590-45df-11ef-900e-035729db3231"
     },
-    "image" : "tb-image;https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flag_of_Hamburg.svg/383px-Flag_of_Hamburg.svg.png",
+    "image" : null,
     "name" : "federalState"
   },
   "relations" : [ ],
