@@ -13,7 +13,7 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "6fb87a50-45db-11ef-900e-035729db3231"
     },
-    "image" : null,
+    "image" : "tb-image;https://content.instructables.com/F8D/NCP5/KR0MZJYJ/F8DNCP5KR0MZJYJ.jpg?auto=webp&fit=bounds&frame=1&height=1024&width=1024auto=webp&frame=1&height=150",
     "name" : "Timer&electricity meter (TEM)",
     "profileData" : {
       "alarms" : null,
