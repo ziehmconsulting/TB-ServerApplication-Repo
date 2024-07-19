@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "13814000-1dd2-11b2-8080-808080808080"
+      "id" : "7b51d690-45db-11ef-900e-035729db3231"
     },
     "deviceData" : {
       "configuration" : {
@@ -20,7 +20,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "c53b9ca0-42ca-11ef-9f3d-371865a74302"
+      "id" : "6fb87a50-45db-11ef-900e-035729db3231"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -31,7 +31,7 @@
     "label" : "Kunde_A",
     "name" : "Kundengerät_8",
     "softwareId" : null,
-    "type" : "default"
+    "type" : "Timer&electricity meter (TEM)"
   },
   "credentials" : {
     "credentialsId" : "xeijEE5OHIyMXNJzlC9i",
@@ -45,8 +45,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1721399300570,
+      "lastUpdateTs" : 1721399958163,
       "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1721399958163,
+      "longValue" : 1721399958156,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
