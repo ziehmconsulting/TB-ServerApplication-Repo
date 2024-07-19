@@ -391,6 +391,42 @@
           "row" : 0,
           "col" : 0,
           "id" : "be696781-cb98-ef49-5f52-06066d8afc32"
+        },
+        "ab2f1ffe-8ad5-3e70-e904-1d5feeeb0e83" : {
+          "typeFullFqn" : "system.device_card",
+          "type" : "rpc",
+          "sizeX" : 3.5,
+          "sizeY" : 4,
+          "config" : {
+            "targetDeviceAliases" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "deviceTitle" : "Device Title",
+              "deviceSubtitle" : "Device Subtitle",
+              "imageName" : "imageName",
+              "deviceName" : "DeviceName",
+              "entityId" : "entityId"
+            },
+            "title" : "Device Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "datasources" : [ ],
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231"
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ab2f1ffe-8ad5-3e70-e904-1d5feeeb0e83"
         }
       },
       "states" : {
@@ -435,6 +471,12 @@
                   "sizeY" : 5,
                   "row" : 3,
                   "col" : 19
+                },
+                "ab2f1ffe-8ad5-3e70-e904-1d5feeeb0e83" : {
+                  "sizeX" : 4,
+                  "sizeY" : 5,
+                  "row" : 3,
+                  "col" : 23
                 }
               },
               "gridSettings" : {
