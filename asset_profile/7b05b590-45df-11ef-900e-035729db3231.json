@@ -12,7 +12,7 @@
       "entityType" : "ASSET_PROFILE",
       "id" : "7b05b590-45df-11ef-900e-035729db3231"
     },
-    "image" : null,
+    "image" : "tb-image;https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlag_of_Hamburg&psig=AOvVaw3LMKHDevy5ASx3gfsoanWp&ust=1721487605395000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCPj15Zyvs4cDFQAAAAAdAAAAABAE",
     "name" : "federalState_Hamburg"
   },
   "relations" : [ ],
