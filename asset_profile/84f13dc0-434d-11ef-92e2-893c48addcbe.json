@@ -12,7 +12,7 @@
       "entityType" : "ASSET_PROFILE",
       "id" : "84f13dc0-434d-11ef-92e2-893c48addcbe"
     },
-    "image" : "tb-image;https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flagge_der_kreisfreien_Stadt_Kiel.svg/750px-Flagge_der_kreisfreien_Stadt_Kiel.svg.png",
+    "image" : null,
     "name" : "city"
   },
   "relations" : [ ],
