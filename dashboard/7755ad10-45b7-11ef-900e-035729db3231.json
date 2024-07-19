@@ -5,190 +5,34 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "d437d885-cfb1-8e16-8b70-7fcd346b2196" : {
-          "typeFullFqn" : "system.alarm_widgets.alarms_table",
-          "type" : "alarm",
-          "sizeX" : 10.5,
-          "sizeY" : 6.5,
+        "ddbee557-8d8c-a33f-7f1f-e57889d2bcdf" : {
+          "typeFullFqn" : "system.control_widgets.persistent_table",
+          "type" : "rpc",
+          "sizeX" : 7.5,
+          "sizeY" : 4,
           "config" : {
-            "timewindow" : {
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 86400000
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "4px",
+            "padding" : "8px",
             "settings" : {
-              "enableSelection" : true,
-              "enableSearch" : true,
-              "displayDetails" : true,
-              "allowAcknowledgment" : true,
-              "allowClear" : true,
-              "allowAssign" : true,
-              "displayActivity" : true,
+              "enableStickyAction" : true,
+              "enableFilter" : true,
               "displayPagination" : true,
               "defaultPageSize" : 10,
+              "enableStickyHeader" : true,
+              "displayColumns" : [ "rpcId", "messageType", "status", "method", "createdTime", "expirationTime" ],
+              "displayDetails" : true,
               "defaultSortOrder" : "-createdTime",
-              "enableSelectColumnDisplay" : true,
-              "enableStickyAction" : false,
-              "enableFilter" : true,
-              "entitiesTitle" : null,
-              "alarmsTitle" : "Alarms"
+              "allowSendRequest" : true,
+              "allowDelete" : true
             },
-            "title" : "Alarms table",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
+            "title" : "Persistent RPC table",
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400,
-              "padding" : "5px 10px 5px 10px"
+              "padding" : "5px 10px"
             },
-            "useDashboardTimewindow" : false,
-            "showLegend" : false,
-            "alarmSource" : {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "cde78cc0-2398-11ef-b19f-cdc6a3f105ff",
-              "entityAliasId" : null,
-              "dataKeys" : [ {
-                "name" : "createdTime",
-                "type" : "alarm",
-                "label" : "Created time",
-                "color" : "#2196f3",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.021092237451093787,
-                "funcBody" : null
-              }, {
-                "name" : "originator",
-                "type" : "alarm",
-                "label" : "Originator",
-                "color" : "#4caf50",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.2780007688856758,
-                "funcBody" : null
-              }, {
-                "name" : "type",
-                "type" : "alarm",
-                "label" : "Type",
-                "color" : "#f44336",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.7323586880398418,
-                "funcBody" : null
-              }, {
-                "name" : "severity",
-                "type" : "alarm",
-                "label" : "Severity",
-                "color" : "#ffc107",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : false
-                },
-                "_hash" : 0.09927019860088193,
-                "funcBody" : null
-              }, {
-                "name" : "status",
-                "type" : "alarm",
-                "label" : "Status",
-                "color" : "#607d8b",
-                "settings" : {
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : ""
-                },
-                "_hash" : 0.6588418951443418,
-                "funcBody" : null
-              }, {
-                "name" : "assignee",
-                "type" : "alarm",
-                "label" : "Assignee",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.5008441077416634,
-                "funcBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            },
-            "alarmsPollingInterval" : 5,
-            "showTitleIcon" : false,
-            "titleIcon" : "warning",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "displayTimewindow" : true,
-            "actions" : { },
-            "configMode" : "advanced",
-            "alarmFilterConfig" : {
-              "statusList" : [ ],
-              "severityList" : [ ],
-              "typeList" : [ ],
-              "searchPropagatedAlarms" : false
-            },
-            "datasources" : [ ],
-            "titleFont" : null,
-            "titleColor" : null,
-            "enableDataExport" : true,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "d437d885-cfb1-8e16-8b70-7fcd346b2196"
-        },
-        "0721264f-6ac9-eb3d-459c-bdba5ff8233a" : {
-          "typeFullFqn" : "system.radial_slider",
-          "type" : "rpc",
-          "sizeX" : 7,
-          "sizeY" : 7.5,
-          "config" : {
-            "targetDeviceAliases" : [ ],
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "requestTimeout" : 500,
-              "deviceTitle" : "Device Title",
-              "deviceSubtitle" : "Device Subtitle",
-              "deviceName" : "DeviceName",
-              "entityId" : "entityId",
-              "rpcMethod" : "rpcMethod",
-              "rpcType" : "oneway"
-            },
-            "title" : "Radial Slider",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : true,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
             "datasources" : [ ],
             "targetDevice" : {
               "type" : "device",
@@ -197,89 +41,13 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "0721264f-6ac9-eb3d-459c-bdba5ff8233a"
+          "id" : "ddbee557-8d8c-a33f-7f1f-e57889d2bcdf"
         },
-        "23450776-7102-f133-ef33-dc7692ce9f29" : {
-          "typeFullFqn" : "system.last_value_card",
-          "type" : "latest",
-          "sizeX" : 3.5,
-          "sizeY" : 2,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231",
-              "dataKeys" : [ {
-                "name" : "attribute1",
-                "type" : "attribute",
-                "label" : "attribute1",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.9956681001847083
-              }, {
-                "name" : "attribute2",
-                "type" : "attribute",
-                "label" : "attribute2",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.7151170045046822
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1721297885034,
-                  "endTimeMs" : 1721384285034
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "title" : "Title",
-              "unit" : "Unit"
-            },
-            "title" : "Last Value Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "23450776-7102-f133-ef33-dc7692ce9f29"
-        },
-        "9ce1340d-0df7-1493-be39-1b07bb79ecb3" : {
-          "typeFullFqn" : "system.camera_viewer",
+        "6fff7b77-3863-ac4f-abb1-601519559bab" : {
+          "typeFullFqn" : "system.navigation_widgets.navigation_card",
           "type" : "static",
-          "sizeX" : 5.5,
-          "sizeY" : 5.5,
+          "sizeX" : 2.5,
+          "sizeY" : 2,
           "config" : {
             "datasources" : [ {
               "type" : "static",
@@ -300,133 +68,162 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "color" : "rgba(255,255,255,0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "name" : "{i18n:device.devices}",
+              "icon" : "devices_other",
+              "path" : "/devices"
+            },
+            "title" : "Navigation card",
+            "dropShadow" : false,
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6fff7b77-3863-ac4f-abb1-601519559bab"
+        },
+        "357cb877-a62e-7e0c-aa3b-2af5abfc503d" : {
+          "typeFullFqn" : "system.input_widgets.markers_placement_google_maps",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231",
+              "dataKeys" : [ {
+                "name" : "attribute1",
+                "type" : "attribute",
+                "label" : "attribute1",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.060225450366245825
+              }, {
+                "name" : "attribute2",
+                "type" : "attribute",
+                "label" : "attribute2",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.3573991140543844
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1721299842504,
+                  "endTimeMs" : 1721386242504
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "title" : "Title",
-              "subtitle" : "Subtitle"
+              "fitMapBounds" : true,
+              "latKeyName" : "latitude",
+              "lngKeyName" : "longitude",
+              "showLabel" : true,
+              "label" : "${entityName}",
+              "tooltipPattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><br/><link-act name='delete'>Delete</link-act>",
+              "markerImageSize" : 34,
+              "gmDefaultMapType" : "roadmap",
+              "gmApiKey" : "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+              "useColorFunction" : false,
+              "markerImages" : [ ],
+              "useMarkerImageFunction" : false,
+              "colorFunction" : "\n",
+              "color" : "#fe7569",
+              "showTooltip" : true,
+              "autocloseTooltip" : true,
+              "defaultCenterPosition" : "0,0",
+              "showTooltipAction" : "click",
+              "polygonKeyName" : "coordinates",
+              "polygonOpacity" : 0.5,
+              "polygonStrokeOpacity" : 1,
+              "polygonStrokeWeight" : 1,
+              "zoomOnClick" : true,
+              "defaultZoomLevel" : 5,
+              "provider" : "google-map",
+              "showCoverageOnHover" : true,
+              "animate" : true,
+              "maxClusterRadius" : 80,
+              "removeOutsideVisibleBounds" : true,
+              "mapProvider" : "HERE.normalDay",
+              "draggableMarker" : true,
+              "editablePolygon" : true,
+              "mapPageSize" : 16384,
+              "showPolygon" : false,
+              "polygonTooltipPattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${coordinates|ts:7}<br/><br/><link-act name='delete_polygon'>Delete</link-act>",
+              "showPolygonTooltip" : false
             },
-            "title" : "Camera Viewer",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : false,
+            "title" : "Markers Placement - Google Maps",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
             "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "actions" : {
+              "tooltipAction" : [ {
+                "name" : "delete",
+                "icon" : "more_horiz",
+                "type" : "custom",
+                "customFunction" : "var entityDatasource = widgetContext.map.map.datasources.filter(\n    function(entity) {\n        return entity.entityId === entityId.id;\n    });\n\nwidgetContext.map.setMarkerLocation(entityDatasource[0], null, null).subscribe(() => widgetContext.updateAliases());",
+                "id" : "8d3c0156-0a14-7a6f-0ddd-0ec16b9ffc91"
+              }, {
+                "name" : "delete_polygon",
+                "icon" : "more_horiz",
+                "type" : "custom",
+                "customFunction" : "var entityDatasource = widgetContext.map.map.datasources.filter(\n    function(entity) {\n        return entity.entityId === entityId.id\n    });\n\nwidgetContext.map.savePolygonLocation(entityDatasource[0], null).subscribe(() => widgetContext.updateAliases());",
+                "id" : "46bf69cd-8906-234c-a879-e2e4c92f5b67"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
-          "id" : "9ce1340d-0df7-1493-be39-1b07bb79ecb3"
-        },
-        "b77bd6de-e185-367a-6ae8-7aeefed34d77" : {
-          "typeFullFqn" : "system.device_card",
-          "type" : "rpc",
-          "sizeX" : 3.5,
-          "sizeY" : 4,
-          "config" : {
-            "targetDeviceAliases" : [ ],
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "deviceTitle" : "Device Title",
-              "deviceSubtitle" : "Device Subtitle",
-              "imageName" : "imageName",
-              "deviceName" : "DeviceName",
-              "entityId" : "entityId"
-            },
-            "title" : "Device Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : true,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231"
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "b77bd6de-e185-367a-6ae8-7aeefed34d77"
-        },
-        "be696781-cb98-ef49-5f52-06066d8afc32" : {
-          "typeFullFqn" : "system.device_card",
-          "type" : "rpc",
-          "sizeX" : 3.5,
-          "sizeY" : 4,
-          "config" : {
-            "targetDeviceAliases" : [ ],
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "deviceTitle" : "Device Title",
-              "deviceSubtitle" : "Device Subtitle",
-              "imageName" : "imageName",
-              "deviceName" : "DeviceName",
-              "entityId" : "entityId"
-            },
-            "title" : "Device Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : true,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231"
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "be696781-cb98-ef49-5f52-06066d8afc32"
-        },
-        "ab2f1ffe-8ad5-3e70-e904-1d5feeeb0e83" : {
-          "typeFullFqn" : "system.device_card",
-          "type" : "rpc",
-          "sizeX" : 3.5,
-          "sizeY" : 4,
-          "config" : {
-            "targetDeviceAliases" : [ ],
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "deviceTitle" : "Device Title",
-              "deviceSubtitle" : "Device Subtitle",
-              "imageName" : "imageName",
-              "deviceName" : "DeviceName",
-              "entityId" : "entityId"
-            },
-            "title" : "Device Card",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "enableDataExport" : true,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231"
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "ab2f1ffe-8ad5-3e70-e904-1d5feeeb0e83"
+          "id" : "357cb877-a62e-7e0c-aa3b-2af5abfc503d"
         }
       },
       "states" : {
@@ -436,47 +233,23 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "d437d885-cfb1-8e16-8b70-7fcd346b2196" : {
-                  "sizeX" : 28,
-                  "sizeY" : 6,
-                  "row" : 15,
-                  "col" : 1
+                "ddbee557-8d8c-a33f-7f1f-e57889d2bcdf" : {
+                  "sizeX" : 9,
+                  "sizeY" : 5,
+                  "row" : 2,
+                  "col" : 12
                 },
-                "0721264f-6ac9-eb3d-459c-bdba5ff8233a" : {
-                  "sizeX" : 7,
+                "6fff7b77-3863-ac4f-abb1-601519559bab" : {
+                  "sizeX" : 3,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 12
+                },
+                "357cb877-a62e-7e0c-aa3b-2af5abfc503d" : {
+                  "sizeX" : 10,
                   "sizeY" : 7,
                   "row" : 0,
                   "col" : 1
-                },
-                "23450776-7102-f133-ef33-dc7692ce9f29" : {
-                  "sizeX" : 11,
-                  "sizeY" : 2,
-                  "row" : 0,
-                  "col" : 8
-                },
-                "9ce1340d-0df7-1493-be39-1b07bb79ecb3" : {
-                  "sizeX" : 6,
-                  "sizeY" : 6,
-                  "row" : 2,
-                  "col" : 8
-                },
-                "b77bd6de-e185-367a-6ae8-7aeefed34d77" : {
-                  "sizeX" : 5,
-                  "sizeY" : 6,
-                  "row" : 2,
-                  "col" : 14
-                },
-                "be696781-cb98-ef49-5f52-06066d8afc32" : {
-                  "sizeX" : 4,
-                  "sizeY" : 5,
-                  "row" : 3,
-                  "col" : 19
-                },
-                "ab2f1ffe-8ad5-3e70-e904-1d5feeeb0e83" : {
-                  "sizeX" : 4,
-                  "sizeY" : 5,
-                  "row" : 3,
-                  "col" : 23
                 }
               },
               "gridSettings" : {
