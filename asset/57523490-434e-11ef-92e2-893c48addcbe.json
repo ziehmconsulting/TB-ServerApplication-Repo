@@ -6,7 +6,7 @@
     },
     "assetProfileId" : {
       "entityType" : "ASSET_PROFILE",
-      "id" : "c5478380-42ca-11ef-9f3d-371865a74302"
+      "id" : "4d5b13a0-45e0-11ef-900e-035729db3231"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -17,11 +17,35 @@
       "entityType" : "ASSET",
       "id" : "57523490-434e-11ef-92e2-893c48addcbe"
     },
-    "label" : "Location",
+    "label" : "Kunde_A",
     "name" : "CST_Filiale",
-    "type" : "default"
+    "type" : "location"
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "1eba3fc0-434d-11ef-92e2-893c48addcbe"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "57523490-434e-11ef-92e2-893c48addcbe"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "57523490-434e-11ef-92e2-893c48addcbe"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "dea32f20-42cd-11ef-8eab-81518e49301c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
