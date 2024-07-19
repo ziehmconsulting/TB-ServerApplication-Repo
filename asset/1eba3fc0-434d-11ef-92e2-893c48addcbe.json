@@ -17,11 +17,47 @@
       "entityType" : "ASSET",
       "id" : "1eba3fc0-434d-11ef-92e2-893c48addcbe"
     },
-    "label" : "district",
+    "label" : "Kiel",
     "name" : "Mettenhof",
     "type" : "default"
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "0d052b00-434d-11ef-92e2-893c48addcbe"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "1eba3fc0-434d-11ef-92e2-893c48addcbe"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "1eba3fc0-434d-11ef-92e2-893c48addcbe"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "57523490-434e-11ef-92e2-893c48addcbe"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "1eba3fc0-434d-11ef-92e2-893c48addcbe"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "7023c8a0-4351-11ef-92e2-893c48addcbe"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
