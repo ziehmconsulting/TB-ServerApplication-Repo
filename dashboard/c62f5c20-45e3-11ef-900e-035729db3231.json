@@ -1,0 +1,22 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "c62f5c20-45e3-11ef-900e-035729db3231"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Location_Device_Map",
+    "title" : "Location_Device_Map"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
