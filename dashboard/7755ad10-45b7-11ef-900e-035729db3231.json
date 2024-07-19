@@ -198,6 +198,82 @@
           "row" : 0,
           "col" : 0,
           "id" : "0721264f-6ac9-eb3d-459c-bdba5ff8233a"
+        },
+        "23450776-7102-f133-ef33-dc7692ce9f29" : {
+          "typeFullFqn" : "system.last_value_card",
+          "type" : "latest",
+          "sizeX" : 3.5,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231",
+              "dataKeys" : [ {
+                "name" : "attribute1",
+                "type" : "attribute",
+                "label" : "attribute1",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9956681001847083
+              }, {
+                "name" : "attribute2",
+                "type" : "attribute",
+                "label" : "attribute2",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7151170045046822
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1721297885034,
+                  "endTimeMs" : 1721384285034
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "title" : "Title",
+              "unit" : "Unit"
+            },
+            "title" : "Last Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "23450776-7102-f133-ef33-dc7692ce9f29"
         }
       },
       "states" : {
@@ -218,6 +294,12 @@
                   "sizeY" : 7,
                   "row" : 0,
                   "col" : 1
+                },
+                "23450776-7102-f133-ef33-dc7692ce9f29" : {
+                  "sizeX" : 11,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 8
                 }
               },
               "gridSettings" : {
