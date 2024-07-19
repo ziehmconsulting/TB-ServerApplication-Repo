@@ -30,7 +30,28 @@
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "e0661b03-e50a-1618-3aca-6c8284622d5a" : {
+          "id" : "e0661b03-e50a-1618-3aca-6c8284622d5a",
+          "alias" : "Kunde_A",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "CUSTOMER",
+              "id" : "7b51d690-45db-11ef-900e-035729db3231"
+            },
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : null,
+            "deviceTypes" : [ "Timer&electricity meter (TEM)" ]
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "displayValue" : "",
