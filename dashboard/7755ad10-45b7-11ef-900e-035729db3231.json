@@ -274,6 +274,87 @@
           "row" : 0,
           "col" : 0,
           "id" : "23450776-7102-f133-ef33-dc7692ce9f29"
+        },
+        "9ce1340d-0df7-1493-be39-1b07bb79ecb3" : {
+          "typeFullFqn" : "system.camera_viewer",
+          "type" : "static",
+          "sizeX" : 5.5,
+          "sizeY" : 5.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "title" : "Title",
+              "subtitle" : "Subtitle"
+            },
+            "title" : "Camera Viewer",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9ce1340d-0df7-1493-be39-1b07bb79ecb3"
+        },
+        "b77bd6de-e185-367a-6ae8-7aeefed34d77" : {
+          "typeFullFqn" : "system.device_card",
+          "type" : "rpc",
+          "sizeX" : 3.5,
+          "sizeY" : 4,
+          "config" : {
+            "targetDeviceAliases" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "deviceTitle" : "Device Title",
+              "deviceSubtitle" : "Device Subtitle",
+              "imageName" : "imageName",
+              "deviceName" : "DeviceName",
+              "entityId" : "entityId"
+            },
+            "title" : "Device Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "datasources" : [ ],
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "58f31bd0-4429-11ef-900e-035729db3231"
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b77bd6de-e185-367a-6ae8-7aeefed34d77"
         }
       },
       "states" : {
@@ -300,6 +381,18 @@
                   "sizeY" : 2,
                   "row" : 0,
                   "col" : 8
+                },
+                "9ce1340d-0df7-1493-be39-1b07bb79ecb3" : {
+                  "sizeX" : 6,
+                  "sizeY" : 6,
+                  "row" : 2,
+                  "col" : 8
+                },
+                "b77bd6de-e185-367a-6ae8-7aeefed34d77" : {
+                  "sizeX" : 5,
+                  "sizeY" : 6,
+                  "row" : 2,
+                  "col" : 14
                 }
               },
               "gridSettings" : {
