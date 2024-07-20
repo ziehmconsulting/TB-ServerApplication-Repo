@@ -259,15 +259,17 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "requestTimeout" : 500,
               "initialValue" : false,
-              "getValueMethod" : "getValue",
-              "setValueMethod" : "setValue",
-              "title" : "Round switch",
               "retrieveValueMethod" : "rpc",
               "valueKey" : "value",
+              "getValueMethod" : "getLEDState",
               "parseValueFunction" : "return data ? true : false;",
-              "convertValueFunction" : "return value;"
+              "setValueMethod" : "setLedStatus",
+              "convertValueFunction" : "return value;",
+              "requestTimeout" : 500,
+              "requestPersistent" : false,
+              "persistentPollingInterval" : 5000,
+              "title" : "Round switch"
             },
             "title" : "Round switch",
             "dropShadow" : true,
