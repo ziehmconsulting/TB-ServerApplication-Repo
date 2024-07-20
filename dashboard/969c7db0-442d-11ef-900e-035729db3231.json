@@ -20,7 +20,7 @@
               "initialValue" : false,
               "retrieveValueMethod" : "rpc",
               "valueKey" : "value",
-              "getValueMethod" : "getValue",
+              "getValueMethod" : "getLedStatus",
               "parseValueFunction" : "return data ? true : false;",
               "setValueMethod" : "setLedStatus",
               "convertValueFunction" : "return value;",
