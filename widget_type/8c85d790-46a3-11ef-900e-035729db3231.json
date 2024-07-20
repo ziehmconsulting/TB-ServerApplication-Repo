@@ -11,7 +11,7 @@
       "sizeX" : 7.5,
       "sizeY" : 3,
       "resources" : [ ],
-      "templateHtml" : "<div>\r\n    <button mat-raised-button color=\"primary\" (click)=\"sendMessage()\">发送消息</button>\r\n</div>",
+      "templateHtml" : "<div>\r\n    <button mat-raised-button color=\"primary\" (click)=\"sendMessage()\">send a message</button>\r\n</div>",
       "templateCss" : "",
       "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.sendMessage = function() {\n        const $injector = self.ctx.$scope.$injector;\n        const broadcastService = $injector.get(self.ctx.servicesMap.get('broadcastService'));\n        broadcastService.broadcast('SOME_CUSTOM_EVENT', {\n            message: 'Hello ThingsBoard'\n        });\n    }\n}\n",
       "settingsSchema" : "{\n}",
