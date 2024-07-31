@@ -1,0 +1,43 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "af4bbf30-4f11-11ef-900e-035729db3231"
+    },
+    "image" : null,
+    "name" : "provisioning_test",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "X509_CERTIFICATE_CHAIN",
+        "allowCreateNewDevicesByX509Certificate" : true,
+        "certificateRegExPattern" : "tjark ziehm",
+        "provisionDeviceSecret" : "MIIF+jCCA+KgAwIBAgIUJeWJZWSAyQ8NSPr1Y9AUazkwt+kwDQYJKoZIhvcNAQELBQAwgZQxCzAJBgNVBAYTAkRFMQswCQYDVQQIDAJTSDENMAsGA1UEBwwES2llbDEZMBcGA1UECgwQemllaG0gY29uc3VsdGluZzEOMAwGA1UECwwFZXNwMzIxFDASBgNVBAMMC3RqYXJrIHppZWhtMSgwJgYJKoZIhvcNAQkBFhl0amFya0B6aWVobWNvbnN1bHRpbmcuY29tMB4XDTI0MDczMTA3NDQyMloXDTI1MDczMTA3NDQyMlowgZQxCzAJBgNVBAYTAkRFMQswCQYDVQQIDAJTSDENMAsGA1UEBwwES2llbDEZMBcGA1UECgwQemllaG0gY29uc3VsdGluZzEOMAwGA1UECwwFZXNwMzIxFDASBgNVBAMMC3RqYXJrIHppZWhtMSgwJgYJKoZIhvcNAQkBFhl0amFya0B6aWVobWNvbnN1bHRpbmcuY29tMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAoCfdsvJzC723H6mzSqJz3FU6fuq8FFE1A/Njjj7SbmiQG8F/QsMGPyyXfPc+hYIK/Z9IVgw8TdjQSh6v1YO8a/N5KBOx6xirfhFR0WatGilsw3cdhABH3rBmUnOoNeo4PdUJ+RfLfPDTRop/Lx+gtRQMqYXmIQMbEsRa0meC3uHO+blNJ4xSnlGta3DagQ941aEpo+ju/sq5a8NU42IBrVQ7RPAvdle7XXejrLpVKp4zfhqjcQorj3/NlFOKPv7ges/FeW/xGFxl67WbgYk4ot/xNlpf/j39QKZlSO5wxlrleIS2GWwQOTQ4Z2qLAmB9kbFYIXdOUlqLlbnuq+o2NozQ/O/ERlkok82h1OW3ZUC/heF+pzn1ggN00EU2mxLTug3xw2PckVS/kCd5xAAC/ZspmHiqgCpqb8vOdq/BxJzmuNO0Z4UpSF6k3G+cc/LkV46xN3kqWflqBXth+YZsFuoAuPNKXTbS3OxcXSBdu8OIJzh36fOXDE8CdQiO12NNBcETWy2O7lFdQKW6sYDSCSZC2L3DlfETHNe8x8DHl2D8DfdGQcnfWuVeiB0kwoU5PCN+9redM13B11nf0aRP25t5crxW/LQ/z4DVrWKI+/JWWePBG+x9++7yhcLuSL4wOfRBpKZ5JoHzWO17auxbqhFJv81tvv+lOr8xVHP6L+UCAwEAAaNCMEAwHQYDVR0OBBYEFDJAhfao6feYDTw62chcshZNR+pbMB8GA1UdIwQYMBaAFP9LI//opXYBQCs8K+vG/lnQnbw5MA0GCSqGSIb3DQEBCwUAA4ICAQAfmn35pAY4e02zoWO5tr6Cnly07dpsltTDxTiKdwWTIvP56LjfDIE+3hAy+QBLnTN4GMqyMbIZ+sctFGVSQKO1cE5/UoIaHv5tgBdgnznz1U2s4/5jy/e1O/DzfeEoBrKGTLErSdqS5RzApHTYc5XpfeODI3E7kY9q3ufGHfQihx0TaQozyvvA8OZYzxh7TE/ePPvO9jBLUGCgLeHMaYxdSj3Wy+S4LKx3dKdLZDrzjlqelBN95Lmyw1XwdXCdhwJzq1jRlV3CycwkBb08PZPHyNh188VjqiZROCliqSlxByYqEt6i6oM2yscyKyTqTNpegt2lyn3djayDdUGK6Cfwem58UIQ5/x6RyDv0GoA0cWOzonpEP2YljEC5tCHegmK83JcqFoy4ZgeWQSs0tRCCE0tRglv+OW4csL8GUI4gc93gzDvU4nxDP31p/0+WV41P4nTCLszxGnncB89ebgEGt1UaY1UAsz3vq1PzEtvOE+qkRQWveUojRHcPxgWjE47cKPIS15Kg64hRWtCHBs31izz/rHwCUl8hN+qDNNqiwcAl2WpaZ9QlmIrZQOo29jnxNpCRmAx+nZPgI1/0IlqDBtf3GSu+FqM4r3dL76COnx4zH9HdCzLBqdHK8Z7q2cyl48qRPtO6rs/VQ8rQdynQ32e1pOm75JWPTTt2H5tTxg=="
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : "a48e70c10c059a80dca2e944849ddaf5c8f82d64f7afa62ca2d466f58e2eb51f",
+    "provisionType" : "X509_CERTIFICATE_CHAIN",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
