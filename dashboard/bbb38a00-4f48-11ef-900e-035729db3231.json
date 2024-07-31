@@ -1,0 +1,22 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "bbb38a00-4f48-11ef-900e-035729db3231"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "test provisioning",
+    "title" : "test provisioning"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
