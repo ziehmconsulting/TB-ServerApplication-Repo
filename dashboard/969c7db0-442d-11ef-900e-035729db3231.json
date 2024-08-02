@@ -45,7 +45,7 @@
             "datasources" : [ ],
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "8fc6e4e0-507f-11ef-b35d-e1e839f7c543"
+              "deviceId" : "adedc040-509a-11ef-b35d-e1e839f7c543"
             }
           },
           "row" : 0,
